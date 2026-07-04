@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renta — Find Verified Apartments, Rentals, Offices, Airbnbs, Hostels & Shops in Uganda</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Renta helps you find verified apartments, rentals, offices, Airbnbs, hostels, and shops in Uganda very fast and secured — completely broker-free. Direct owner chat, digital leases, and escrow payments." />
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Custom Style Link (Vite entrypoint) -->
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- ─── Sticky Header / Navbar ─── -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+          <defs>
+            <linearGradient id="renta-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#FF385C"/>
+              <stop offset="50%" stop-color="#FF5A60"/>
+              <stop offset="100%" stop-color="#FF7A00"/>
+            </linearGradient>
+          </defs>
+          <rect x="5" y="4" width="5" height="24" rx="2.5" fill="url(#renta-grad)" />
+          <path d="M10 4H18.5C23.7 4 27 7.3 27 12C27 16.7 23.7 20 18.5 20H10V4ZM15 9V15H18C19.7 15 21.5 14.2 21.5 12C21.5 9.8 19.7 9 18 9H15Z" fill="url(#renta-grad)" />
+          <path d="M17.5 19L24.5 27.2C25.3 28.1 26.7 28.2 27.6 27.4C28.5 26.6 28.6 25.2 27.8 24.3L21.5 17L17.5 19Z" fill="url(#renta-grad)" />
+        </svg>
+        <span>Renta</span>
+      </a>
+      
+      <div class="nav-links">
+        <a href="#services-list-section">Our Services</a>
+        <a href="#simulators-section">Interactive Demo</a>
+        <a href="#trust-section">Trust & Safety</a>
+        <a href="#founders-section">Founders</a>
+        <a href="#contact-section">Contact Us</a>
+        <a href="#faq-section">FAQ</a>
+      </div>
+      
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <!-- CTA -->
+        <a href="#download-section" class="btn-primary">
+          <i class="fa-solid fa-cloud-arrow-down"></i> Get App
+        </a>
+        <button class="hamburger" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── Hero Section (Download Focused, No SMS / No Listings) ─── -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="flag-icon">🇺🇬</span> Zero Brokers • 100% Secured Tenancies
+      </div>
+      
+      <h1>Find Your Next Space <br><span>Fast & Secure</span> without Brokers.</h1>
+      
+      <p>Renta helps people find verified <strong>apartments, rentals, offices, Airbnbs, hostels, and shops</strong> in Uganda. Connect directly with owners, negotiate terms, sign digital lease agreements, and manage payments securely in-app.</p>
+      
+      <!-- Direct Download Badges (Apple & Google Play) -->
+      <div class="app-badges-row" id="download-section" style="justify-content: center; margin-bottom: 48px;">
+        <a href="#" class="app-badge-btn" aria-label="Download Renta on Apple App Store">
+          <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download Renta on App Store">
+        </a>
+        <a href="#" class="app-badge-btn" aria-label="Get Renta on Google Play Store">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+      
+      <!-- Core App Metrics -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-val">20K+</div>
+          <div class="stat-lbl">Downloads</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val">5,000+</div>
+          <div class="stat-lbl">Verified Listings</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val">0%</div>
+          <div class="stat-lbl">Broker Commission</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val">4.9★</div>
+          <div class="stat-lbl">App Store Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Services Grid Section ─── -->
+  <section class="section-padding" id="services-list-section" style="background-color: var(--bg-sub);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 56px;">
+        <span class="section-tag"><i class="fa-solid fa-cubes"></i> Core Services</span>
+        <h2>What You Can Find on Renta</h2>
+        <p class="section-sub" style="margin: 0 auto;">Skip the agent loops. Browse verified properties across these main categories and move in with peace of mind.</p>
+      </div>
+      
+      <div class="trust-grid">
+        <!-- Service 1: Apartments & Rentals -->
+        <div class="trust-card" style="background: var(--bg-card);">
+          <div class="trust-card-icon" style="background: rgba(255,56,92,0.1); color: var(--primary);">
+            <i class="fa-solid fa-hotel"></i>
+          </div>
+          <h4 class="trust-card-title">Apartments & Rentals</h4>
+          <p class="trust-card-desc" style="color: var(--text-sub);">Find premium multi-bedroom apartments, townhouses, and cozy studio rentals in Kiwatule, Bunga, Kololo, and Wakiso suburbs.</p>
+        </div>
+        
+        <!-- Service 2: Executive Offices -->
+        <div class="trust-card" style="background: var(--bg-card);">
+          <div class="trust-card-icon" style="background: rgba(255,56,92,0.1); color: var(--primary);">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <h4 class="trust-card-title">Office Workspaces</h4>
+          <p class="trust-card-desc" style="color: var(--text-sub);">Locate premium executive offices, shared boardrooms, and hot desks in Nakasero, Kampala Hill, and Kololo commercial centers.</p>
+        </div>
+        
+        <!-- Service 3: Vacation Airbnbs -->
+        <div class="trust-card" style="background: var(--bg-card);">
+          <div class="trust-card-icon" style="background: rgba(255,56,92,0.1); color: var(--primary);">
+            <i class="fa-solid fa-umbrella-beach"></i>
+          </div>
+          <h4 class="trust-card-title">Airbnbs & Short Stays</h4>
+          <p class="trust-card-desc" style="color: var(--text-sub);">Book clean, fully-furnished vacation rentals, lakeside guesthouses in Entebbe, and weekend retreats in Jinja very fast.</p>
+        </div>
+        
+        <!-- Service 4: Student Hostels -->
+        <div class="trust-card" style="background: var(--bg-card);">
+          <div class="trust-card-icon" style="background: rgba(255,56,92,0.1); color: var(--primary);">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h4 class="trust-card-title">Student Hostels</h4>
+          <p class="trust-card-desc" style="color: var(--text-sub);">Get verified rooms near university gates including MUBS, Makerere, and Kyambogo. Self-contained layouts with shuttle links.</p>
+        </div>
+        
+        <!-- Service 5: Retail Shops -->
+        <div class="trust-card" style="background: var(--bg-card);">
+          <div class="trust-card-icon" style="background: rgba(255,56,92,0.1); color: var(--primary);">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <h4 class="trust-card-title">Shops & Booths</h4>
+          <p class="trust-card-desc" style="color: var(--text-sub);">Acquire corner ground shops, shopping mall stands, and retail booths in heavy foot-traffic areas like Kikuubo and Wandegeya.</p>
+        </div>
+        
+        <!-- Service 6: Moving Logistics -->
+        <div class="trust-card" style="background: var(--bg-card);">
+          <div class="trust-card-icon" style="background: rgba(255,56,92,0.1); color: var(--primary);">
+            <i class="fa-solid fa-truck-moving"></i>
+          </div>
+          <h4 class="trust-card-title">Moving Logistics</h4>
+          <p class="trust-card-desc" style="color: var(--text-sub);">Calculate local moving rates, select truck sizes (pickup or box), and book vetted logistics helpers in Kampala instantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Interactive Features Applied & Simulators ─── -->
+  <section class="section-padding" id="simulators-section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 56px;">
+        <span class="section-tag"><i class="fa-solid fa-play"></i> Live Demonstration</span>
+        <h2>Try Renta App Features Live</h2>
+        <p class="section-sub" style="margin: 0 auto;">Select any utility below and test-drive our interactive mobile simulators directly on the screen.</p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Interactive Service Cards Selector -->
+        <div class="services-list">
+          <div class="service-item-card active" data-simulator="sim-chat">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <div class="service-item-details">
+              <h4>Direct Chat & Inquiry</h4>
+              <p>Test the messenger: ask Dr. Arthur Mugisha about property details and watch the instant response generator flow.</p>
+            </div>
+          </div>
+          
+          <div class="service-item-card" data-simulator="sim-scheduler">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <div class="service-item-details">
+              <h4>Viewing Scheduler</h4>
+              <p>Test the calendar: select a date and time slot to book a mock physical property tour instantly.</p>
+            </div>
+          </div>
+          
+          <div class="service-item-card" data-simulator="sim-movers">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-truck-moving"></i>
+            </div>
+            <div class="service-item-details">
+              <h4>Mover Cost Estimator</h4>
+              <p>Test the sliders: select a vehicle size and drag the distance slider to view calculated moving prices.</p>
+            </div>
+          </div>
+          
+          <div class="service-item-card" data-simulator="sim-agreement">
+            <div class="service-icon-wrapper">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+            <div class="service-item-details">
+              <h4>Smart Contract Lease</h4>
+              <p>Test the signatures: type your name, tap the pad, and generate a secure legally-binding digital tenancy lease.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Live Interactive Simulator Panel -->
+        <div class="simulator-panel">
+          
+          <!-- 1. Chat Simulator Pane -->
+          <div class="simulator-pane active" id="sim-chat">
+            <div class="chat-sim-header">
+              <div class="chat-avatar">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Arthur Mugisha">
+              </div>
+              <div class="chat-user-info">
+                <h5>Dr. Arthur Mugisha (Owner)</h5>
+                <span class="chat-status">Online • Verified</span>
+              </div>
+            </div>
+            <div class="chat-messages-container" id="chat-messages-container">
+              <div class="chat-bubble landlord">
+                Hi there! Thanks for your interest in renting my property. Ask me any questions about the rent, Yaka meter setups, or lake Victoria views!
+                <span class="chat-time">10:02 AM</span>
+              </div>
+              <div class="chat-typing-indicator" id="chat-typing-indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="chat-input-bar">
+              <div class="chat-input-wrapper">
+                <input type="text" id="chat-sim-input" placeholder="Type a message (e.g. rent price, viewing tour, water backup)..." />
+              </div>
+              <button class="chat-send-btn" id="chat-sim-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+          </div>
+          
+          <!-- 2. Scheduler Simulator Pane -->
+          <div class="simulator-pane" id="sim-scheduler">
+            <div class="chat-sim-header" style="background:var(--primary); color:#fff;">
+              <i class="fa-solid fa-calendar-check" style="font-size: 20px;"></i>
+              <h5 style="margin-left: 8px;">In-App Viewing Scheduler</h5>
+            </div>
+            <div class="calendar-sim-body">
+              <div class="calendar-header-row">
+                <span class="calendar-month-title">July 2026</span>
+                <span style="font-size: 12px; color: var(--text-sub);">Kampala Time (EAT)</span>
+              </div>
+              
+              <!-- Mini Calendar -->
+              <div class="calendar-grid">
+                <div class="calendar-day-header">Mo</div>
+                <div class="calendar-day-header">Tu</div>
+                <div class="calendar-day-header">We</div>
+                <div class="calendar-day-header">Th</div>
+                <div class="calendar-day-header">Fr</div>
+                <div class="calendar-day-header">Sa</div>
+                <div class="calendar-day-header">Su</div>
+                
+                <div class="calendar-day empty"></div>
+                <div class="calendar-day empty"></div>
+                <div class="calendar-day booked">1</div>
+                <div class="calendar-day">2</div>
+                <div class="calendar-day">3</div>
+                <div class="calendar-day active">4</div>
+                <div class="calendar-day">5</div>
+                
+                <div class="calendar-day">6</div>
+                <div class="calendar-day booked">7</div>
+                <div class="calendar-day">8</div>
+                <div class="calendar-day">9</div>
+                <div class="calendar-day">10</div>
+                <div class="calendar-day">11</div>
+                <div class="calendar-day">12</div>
+              </div>
+              
+              <!-- Available Slots -->
+              <div style="font-weight: 700; font-size:13px; margin-top:8px;">Available Slots:</div>
+              <div class="time-slots-grid">
+                <button class="time-slot active">09:00 AM</button>
+                <button class="time-slot">11:30 AM</button>
+                <button class="time-slot">02:00 PM</button>
+                <button class="time-slot">04:30 PM</button>
+              </div>
+              
+              <button class="schedule-submit-btn" id="schedule-sim-submit">Schedule Host Tour</button>
+            </div>
+          </div>
+          
+          <!-- 3. Movers Estimate Simulator Pane -->
+          <div class="simulator-pane" id="sim-movers">
+            <div class="chat-sim-header">
+              <i class="fa-solid fa-truck-ramp-box" style="font-size: 20px; color: var(--primary);"></i>
+              <h5 style="margin-left: 8px;">Moving Cost Calculator</h5>
+            </div>
+            
+            <div class="mover-sim-body">
+              <div style="font-weight: 700; font-size: 13px;">1. Select Vehicle Size:</div>
+              <div class="mover-options-grid">
+                <div class="mover-option active" data-base="30000" data-rate="1500">
+                  <i class="fa-solid fa-truck-pickup"></i>
+                  <span class="mover-option-title">Pickup Truck</span>
+                  <span class="mover-option-desc">Few Bags</span>
+                </div>
+                <div class="mover-option" data-base="60000" data-rate="2500">
+                  <i class="fa-solid fa-truck"></i>
+                  <span class="mover-option-title">Box Truck</span>
+                  <span class="mover-option-desc">1-2 Bedroom</span>
+                </div>
+                <div class="mover-option" data-base="100000" data-rate="4000">
+                  <i class="fa-solid fa-truck-flatbed"></i>
+                  <span class="mover-option-title">Flatbed Big</span>
+                  <span class="mover-option-desc">3+ Bedroom</span>
+                </div>
+              </div>
+              
+              <!-- Distance Slider -->
+              <div class="mover-distance-slider">
+                <div class="slider-label-row">
+                  <span>2. Distance (Kampala Area):</span>
+                  <span id="mover-dist-val">15 km</span>
+                </div>
+                <input type="range" id="mover-distance" class="mover-slider" min="1" max="60" value="15" />
+              </div>
+              
+              <!-- Result Summary -->
+              <div class="mover-summary-card">
+                <div class="mover-summary-row">
+                  <span>Base Vehicle Fee</span>
+                  <span id="mover-summary-base">UGX 30,000</span>
+                </div>
+                <div class="mover-summary-row">
+                  <span>Distance Charge</span>
+                  <span id="mover-summary-distance">UGX 22,500</span>
+                </div>
+                <div class="mover-summary-row total">
+                  <span>Estimated Total</span>
+                  <span id="mover-summary-total">UGX 52,500</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 4. Lease Agreement Simulator Pane -->
+          <div class="simulator-pane" id="sim-agreement">
+            <div class="chat-sim-header" style="background:#0F172A; color:#fff;">
+              <i class="fa-solid fa-file-shield" style="font-size:20px; color:var(--primary);"></i>
+              <h5 style="margin-left: 8px;">Renta Tenancy Agreement</h5>
+            </div>
+            <div class="agreement-sim-body">
+              <div class="agreement-paper">
+                <h5>RESIDENTIAL TENANCY LEASE</h5>
+                <p>This agreement outlines the tenancy guidelines executed through the Renta mobile application.</p>
+                <p><strong>1. PARTIES:</strong> Executed between Tenant (Joseph Nsubuga) and Host Landlord.</p>
+                <p><strong>2. RENT DEPOSIT:</strong> Standard 1-month security deposit held securely in Renta Escrow.</p>
+                <p><strong>3. PAYMENTS:</strong> Payments are processed digitally via Mobile Money (MTN/Airtel) or Bank cards.</p>
+              </div>
+              
+              <div class="agreement-input-group">
+                <label for="agreement-name">Tenant Signature Name:</label>
+                <input type="text" id="agreement-name" value="Joseph Nsubuga" placeholder="Type signature..." />
+              </div>
+              
+              <div style="font-size: 11px; font-weight:700; color:var(--text-sub); margin-bottom: 2px;">Tap signature box to digitally sign:</div>
+              <div class="agreement-sign-pad" id="sign-pad">
+                <span style="color:var(--text-muted); font-size:12px;">Tap here to sign document...</span>
+              </div>
+              
+              <button class="schedule-submit-btn" id="agreement-sim-submit" style="background:#0F172A;">Submit Signed Lease</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Trust & Safety Section ─── -->
+  <section class="section-padding trust-section" id="trust-section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 56px;">
+        <span class="section-tag" style="background:rgba(255,56,92,0.15); color:var(--primary);"><i class="fa-solid fa-shield-halved"></i> Safety Guard</span>
+        <h2>How Renta Secures Your Search</h2>
+        <p class="section-sub" style="margin: 0 auto; color: #94A3B8;">We built Renta to completely eliminate fake brokers, double-letting scams, and lock-out risks.</p>
+      </div>
+      
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-card-icon">
+            <i class="fa-solid fa-id-card"></i>
+          </div>
+          <h4 class="trust-card-title">NIN Vetting System</h4>
+          <p class="trust-card-desc">Every landlord or rental manager is verified against the National Identification database (NIRA) before being allowed to list any spaces.</p>
+        </div>
+        
+        <div class="trust-card">
+          <div class="trust-card-icon">
+            <i class="fa-solid fa-camera-retro"></i>
+          </div>
+          <h4 class="trust-card-title">EXIF Vetting Checks</h4>
+          <p class="trust-card-desc">We scan photo upload properties metadata and leverage image-matching models to ensure listings feature genuine on-site photos, preventing duplicate scams.</p>
+        </div>
+        
+        <div class="trust-card">
+          <div class="trust-card-icon">
+            <i class="fa-solid fa-vault"></i>
+          </div>
+          <h4 class="trust-card-title">Secure Escrow Holding</h4>
+          <p class="trust-card-desc">Your rent deposit remains locked in secure escrow and is only released to the landlord once you confirm physical handover and keys on-site.</p>
+        </div>
+        
+        <div class="trust-card">
+          <div class="trust-card-icon">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h4 class="trust-card-title">Tenant Review Ledger</h4>
+          <p class="trust-card-desc">Read honest, immutable reviews from past tenants about landlords, water pressure, utility costs, and neighborhood security scores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Founders Section ─── -->
+  <section class="section-padding founders-section" id="founders-section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 56px;">
+        <span class="section-tag"><i class="fa-solid fa-users"></i> Our Team</span>
+        <h2>The Founders of Renta</h2>
+        <p class="section-sub" style="margin: 0 auto;">Meet the engineering and product team working to build Uganda's safest rental platform.</p>
+      </div>
+      
+      <div class="founders-grid">
+        <!-- Founder 1: Kiiza Isaac -->
+        <div class="founder-card">
+          <div class="founder-avatar-wrapper">
+            <img class="founder-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Kiiza Isaac">
+          </div>
+          <h4 class="founder-name">Kiiza Isaac</h4>
+          <div class="founder-role">Co-Founder & CEO</div>
+          <p class="founder-bio">Leading the executive strategy and building partnerships with verified developers and banking institutions.</p>
+          <div class="founder-socials">
+            <a href="#" class="founder-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="founder-social-btn" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        
+        <!-- Founder 2: Ssalamuka Emmanuel -->
+        <div class="founder-card">
+          <div class="founder-avatar-wrapper">
+            <img class="founder-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Ssalamuka Emmanuel">
+          </div>
+          <h4 class="founder-name">Ssalamuka Emmanuel</h4>
+          <div class="founder-role">Co-Founder & CTO</div>
+          <p class="founder-bio">Heading technology systems and managing secure escrow vaults, data hashing, and verification architectures.</p>
+          <div class="founder-socials">
+            <a href="#" class="founder-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="founder-social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        
+        <!-- Founder 3: Hariith Tumusiime -->
+        <div class="founder-card">
+          <div class="founder-avatar-wrapper">
+            <img class="founder-avatar" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80" alt="Hariith Tumusiime">
+          </div>
+          <h4 class="founder-name">Hariith Tumusiime</h4>
+          <div class="founder-role">Co-Founder & COO</div>
+          <p class="founder-bio">Supervising operational flow, verified truck logistics, host relations, and tenant matching systems.</p>
+          <div class="founder-socials">
+            <a href="#" class="founder-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="founder-social-btn" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        
+        <!-- Founder 4: Nasser Ndugwa -->
+        <div class="founder-card">
+          <div class="founder-avatar-wrapper">
+            <img class="founder-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80" alt="Nasser Ndugwa">
+          </div>
+          <h4 class="founder-name">Nasser Ndugwa</h4>
+          <div class="founder-role">Co-Founder & Product Head</div>
+          <p class="founder-bio">Shaping direct-messaging logs, viewing scheduler interfaces, and building high-fidelity client features.</p>
+          <div class="founder-socials">
+            <a href="#" class="founder-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="founder-social-btn" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact Form Section ─── -->
+  <section class="section-padding contact-section" id="contact-section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 56px;">
+        <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get in Touch</span>
+        <h2>Reach Renta Support</h2>
+        <p class="section-sub" style="margin: 0 auto;">Have a question about escrow, listing setups, or looking for partnership options? Send us a message.</p>
+      </div>
+      
+      <div class="contact-container">
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Your Name *</label>
+              <input type="text" id="contact-name" placeholder="Joseph Nsubuga" required class="form-input" />
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-email">Email Address *</label>
+              <input type="email" id="contact-email" placeholder="joseph@gmail.com" required class="form-input" />
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-subject">Inquiry Subject</label>
+            <select id="contact-subject" class="form-input" style="height: 52px; padding: 12px 18px;">
+              <option value="general">General Inquiry</option>
+              <option value="partnership">Business Partnership</option>
+              <option value="landlord">Landlord Listing Support</option>
+              <option value="dispute">Escrow / Refund Dispute</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-message">Detailed Message *</label>
+            <textarea id="contact-message" placeholder="Describe how we can help you..." required class="form-input form-textarea"></textarea>
+          </div>
+          
+          <button type="submit" class="contact-submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ Section (Accordion) ─── -->
+  <section class="section-padding" id="faq-section" style="background-color: var(--bg-card);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 56px;">
+        <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Help Desk</span>
+        <h2>Frequently Answered Questions</h2>
+        <p class="section-sub" style="margin: 0 auto;">Everything you need to know about setting up and using the Renta app in Uganda.</p>
+      </div>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>How does Renta protect tenants from double-listing fraud?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-content">
+            <p>Every landlord registering on Renta must submit valid biometric IDs matched against National database records. Properties must also pass geographic metadata checks. Crucially, your rent deposit is locked in Renta Escrow until you physically verify the property on-site and confirm handover.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>Is the Renta app free to download and use?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-content">
+            <p>Yes. Downloading Renta, exploring listing streams, booking physical viewing tours, and direct chat are completely free. If you select a space and execute a contract, a small flat fee of 3% is applied on deposits handling and smart lease execution.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>What happens if the space is not as described during viewing?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-content">
+            <p>If you perform a viewing tour and decide not to proceed, simply cancel the request in the app. Because your deposit has not been released from our escrow system, the funds are instantly refunded to your Renta wallet or mobile money number.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>Can I pay rent via Mobile Money on Renta?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-content">
+            <p>Absolutely. Renta features MTN Mobile Money and Airtel Money integrations. You can pay security deposits, monthly rent, and movers fees directly from your mobile wallet, generating digital receipts automatically logged in the ledger.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Premium Footer ─── -->
+  <footer>
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <svg width="36" height="36" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <defs>
+              <linearGradient id="renta-grad-footer" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#FF385C"/>
+                <stop offset="50%" stop-color="#FF5A60"/>
+                <stop offset="100%" stop-color="#FF7A00"/>
+              </linearGradient>
+            </defs>
+            <rect x="5" y="4" width="5" height="24" rx="2.5" fill="url(#renta-grad-footer)" />
+            <path d="M10 4H18.5C23.7 4 27 7.3 27 12C27 16.7 23.7 20 18.5 20H10V4ZM15 9V15H18C19.7 15 21.5 14.2 21.5 12C21.5 9.8 19.7 9 18 9H15Z" fill="url(#renta-grad-footer)" />
+            <path d="M17.5 19L24.5 27.2C25.3 28.1 26.7 28.2 27.6 27.4C28.5 26.6 28.6 25.2 27.8 24.3L21.5 17L17.5 19Z" fill="url(#renta-grad-footer)" />
+          </svg>
+          <span>Renta</span>
+        </a>
+        <p>Uganda's first comprehensive rental companion application. Connect directly with landlords, execute secure leases, and pay rent securely without brokers.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Services Applied</h4>
+        <a href="#services-list-section">Verified Apartments</a>
+        <a href="#services-list-section">Executive Offices</a>
+        <a href="#services-list-section">Airbnbs & Hostels</a>
+        <a href="#services-list-section">Retail Shops</a>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Ecosystem</h4>
+        <a href="#services-list-section">Moving Logistics</a>
+        <a href="#trust-section">Safety Escrow</a>
+        <a href="#founders-section">Co-Founders</a>
+        <a href="#contact-section">Send Inquiries</a>
+      </div>
+      
+      <div class="footer-newsletter">
+        <h4>Download Link via Email</h4>
+        <p>Subscribe to receive App Store/Play Store direct links, update logs, and rent voucher discounts.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required aria-label="Email address for app link" />
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <span>© 2026 Renta Uganda. Gated Tenancies Escrow Platform. Kampala, Uganda 🇺🇬</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Vetting</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── Universal Notification Toast ─── -->
+  <div class="notification-toast" id="notification-toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <div class="notification-toast-content">
+      <h6>Renta Support</h6>
+      <p>Action completed successfully.</p>
+    </div>
+  </div>
+
+  <!-- ─── Script Link (Vite entrypoint) ─── -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
